@@ -1,51 +1,7 @@
-class SerieTv {
-    imagen:string;
-    nombre:string;
-    categoria:string;
-    constructor(imagen:string, nombre:string, categoria:string) {
-        this.imagen = imagen;
-        this.nombre = nombre;
-        this.categoria = categoria;
-        
-    }
-    
-}
-class EpisodioSerie {
-    nombre:string;
-    resumen:string;
-    constructor(nombre:string, resumen:string ) {
-        this.nombre = nombre;
-        this.resumen = resumen;
-
-    }
-
-
-}
-class Persona {
-    nombre:string;
-    fotografia:string
-    descripcion:string;
-    constructor(nombre:string, fotografia:string, descripcion:string) {
-        this.nombre = nombre;
-        this.fotografia = fotografia;
-        this.descripcion = descripcion;
-        
-    }
-
-}
-class Actor extends Persona{
-    constructor(nombre:string, fotografia:string, descripcion:string){
-        super(nombre, fotografia, descripcion)
-
-    }
-
-}
-class Director extends Persona {
-    constructor(nombre:string, fotografia:string, descripcion:string){
-        super(nombre, fotografia, descripcion)
-
-}
-}
+import { SerieTv } from "./serieTv.js";
+import { EpisodioSerie } from "./episodioSerie.js";
+import { Persona } from "./persona.js";
+import { Director } from "./director.js";
 class Plataforma {
     nombre:string;
     sitioWeb:string;
